@@ -51,7 +51,9 @@ void loop()
         // Control the relays based on the addr_lo and data_hi values
         for (int i = 0; i < 8; i++)
         {
-            String relayAddr = String(i + 8).toUpperCase();
+            String n = String(i + 8);
+            String relayAddr = String(i + 8, HEX);
+            relayAddr.toUpperCase();
             if (addr_lo == relayAddr && data_hi == "FF")
             {
                 Serial.print("Trigger pin ");
