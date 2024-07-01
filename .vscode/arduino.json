@@ -1,4 +1,4 @@
 {
     "board": "arduino:avr:uno",
-    "sketch": "appBleControl.ino"
+    "sketch": "v2\\v2.ino"
 }
