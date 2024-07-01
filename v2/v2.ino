@@ -106,7 +106,7 @@ void loop()
         alloff();
         digitalWrite(ledpin9, HIGH);
         delay(2000);
-        digitalWrite(ledpin9, LOW);
+        digitalWrite(ledpin9, LOW); 
     }
     else if (val == '0')
     {
