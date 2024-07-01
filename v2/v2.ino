@@ -49,50 +49,68 @@ void loop()
     {
         alloff();
         digitalWrite(ledpin1, HIGH); // Turn on the green light and off the red light
+        delay(2000);
+        digitalWrite(ledpin1, LOW);
     }
     else if (val == '2') // 1 not received
     {
         alloff();
         digitalWrite(ledpin2, HIGH);
+        delay(2000);
+        digitalWrite(ledpin2, LOW);
     }
     else if (val == '3')
     {
         alloff();
         digitalWrite(ledpin3, HIGH);
+        delay(2000);
+        digitalWrite(ledpin3, LOW);
     }
     else if (val == '4')
     {
         alloff();
         digitalWrite(ledpin4, HIGH);
+        delay(2000);
+        digitalWrite(ledpin4, LOW);
     }
     else if (val == '5')
     {
         alloff();
         digitalWrite(ledpin5, HIGH);
+        delay(2000);
+        digitalWrite(ledpin5, LOW);
     }
     else if (val == '6')
     {
         alloff();
         digitalWrite(ledpin6, HIGH);
+        delay(2000);
+        digitalWrite(ledpin6, LOW);
     }
     else if (val == '7')
     {
         alloff();
         digitalWrite(ledpin7, HIGH);
+        delay(2000);
+        digitalWrite(ledpin7, LOW);
     }
     else if (val == '8')
     {
         alloff();
         digitalWrite(ledpin8, HIGH);
+        delay(2000);
+        digitalWrite(ledpin8, LOW);
     }
     else if (val == '9')
     {
         alloff();
         digitalWrite(ledpin9, HIGH);
+        delay(2000);
+        digitalWrite(ledpin9, LOW);
     }
     else if (val == '0')
     {
         alloff();
     }
-    
+    val = ' ';
 }
