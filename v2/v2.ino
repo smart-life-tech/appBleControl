@@ -37,6 +37,33 @@ void alloff()
     digitalWrite(ledpin8, LOW);
     digitalWrite(ledpin9, LOW);
 }
+
+
+void powerDown() //power down by pulsing LED pin1 once, and pin4 4 times
+{
+    digitalWrite(ledpin1, HIGH); 
+    delay(200);
+    digitalWrite(ledpin1, LOW);
+    
+    digitalWrite(ledpin3, HIGH);
+    delay(200);
+    digitalWrite(ledpin3, LOW);
+    delay(200);
+    digitalWrite(ledpin3, HIGH);
+    delay(200);
+    digitalWrite(ledpin3, LOW);
+    delay(200);
+    digitalWrite(ledpin3, HIGH);
+    delay(200);
+    digitalWrite(ledpin3, LOW);
+    delay(200);
+    digitalWrite(ledpin3, HIGH);
+    delay(200);
+    digitalWrite(ledpin3, LOW);
+    
+}
+
+
 void loop()
 {
     if (BT.available()) // check if there is data to read
@@ -111,6 +138,7 @@ void loop()
     else if (val == '0')
     {
         alloff();
+        powerDown();
     }
     val = ' ';
 }
